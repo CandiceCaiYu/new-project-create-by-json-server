@@ -31,6 +31,12 @@ const TodoList = () => {
         retrieveList()
     }
 
+    const handleKeyDown = (e) => {
+        if(e.code === 'Enter') {
+            handleAddItem()
+        }
+    }
+
     const retrieveList = async () => {
         const result = await axiosRequest({
             method:'get',
@@ -47,8 +53,8 @@ const TodoList = () => {
         <div>
         <h1>TO DO LIST</h1>
             <label>
-                <input onChange={handleChange}/>
-                <button onClick={handleAddItem}>ADD</button>
+                <input onChange={handleChange} onKeyDown={handleKeyDown}/>
+                <button onClick={handleAddItem}  >ADD</button>
             </label>
             <ul>
                 {list?.map(item => (
