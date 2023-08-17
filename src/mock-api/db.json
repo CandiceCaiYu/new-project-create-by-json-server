@@ -1,9 +1,50 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "type code" }
+    {
+      "title": "12",
+      "id": 7
+    },
+    {
+      "title": "1223",
+      "id": 8
+    },
+    {
+      "title": "12312",
+      "id": 10
+    },
+    {
+      "title": "Math",
+      "id": 11
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "type code" }
+  "comments": [],
+  "profile": {
+    "name": "type code"
+  },
+  "books": [
+    {
+      "name": "Math",
+      "id": 1
+    },
+    {
+      "name": "Math",
+      "id": 2
+    },
+    {
+      "name": "Math",
+      "id": 3
+    },
+    {
+      "name": "Math",
+      "id": 4
+    },
+    {
+      "name": "Math",
+      "id": 5
+    },
+    {
+      "name": "Math",
+      "id": 6
+    }
+  ]
 }
